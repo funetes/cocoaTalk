@@ -8,60 +8,71 @@
   <link rel="stylesheet" href="./css/styles.css">
   <title>chats | KaKao Clone</title>
 </head>
-<body>
-  <div class="status-bar">
-    <div class="status-bar__column">
-      <span class="status-bar__clock">03:30</span>
+<body class="chats-body">
+  <div class="header-wrapper">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span class="status-bar__clock">03:30</span>
+      </div>
+      <div class="status-bar__column">
+        <i class="far fa-clock"></i>
+        <i class="fas fa-volume-mute"></i>
+        <i class="fas fa-wifi"></i>
+        <span class="status-bar__battery-level">75%</span>
+        <i class="fas fa-battery-three-quarters"></i>
+      </div>
     </div>
-    <div class="status-bar__column">
-      <i class="far fa-clock"></i>
-      <i class="fas fa-volume-mute"></i>
-      <i class="fas fa-wifi"></i>
-      <span class="status-bar__battery-level">75%</span>
-      <i class="fas fa-battery-three-quarters"></i>
-    </div>
+    <header class="header">
+      <div class="header__header-column">
+        <a href="./index.html" class="header__back-btn">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+        <h1 class="header__title">Best Friends</h1>
+      </div>
+      <div class="header__header-column">
+        <span class="header__icon">
+          <i class="fas fa-search"></i>
+        </span>
+        <span class="header__icon">
+          <i class="fas fa-bars"></i>
+        </span>
+      </div>
+    </header>
   </div>
-  <header class="header">
-    <div class="header__header-column">
-      <a href="./index.html" class="header__back-btn">
-        <i class="fas fa-arrow-left"></i>
-      </a>
-      <h1 class="header__title">Best Friends</h1>
-    </div>
-    <div class="header__header-column">
-      <span class="header__icon">
-        <i class="fas fa-search"></i>
-      </span>
-      <span class="header__icon">
-        <i class="fas fa-bars"></i>
-      </span>
-    </div>
-  </header>
-  <main class="chat">
-    <h5 class="chat__timestamp">Sunday, May 5, 2019</h5>
+  <main class="chat-screen">
     <ul class="chat__messages">
+      <h5 class="chat__timestamp">Sunday, May 5, 2019</h5>
       <li class="incoming-message message">
         <img src="./images/me.jpg" class="g-avatar message__avatar">
         <div class="message__content">
-          <span class="message__author">
-            thor
-          </span>
-          <span class="message__bubble">
-            i`m thor
-          </span>
+          <span class="message__bubble">i`m thor</span>
+          <span class="message__author">thor</span>
         </div>
-        <span class="message__timestamp">15:30</span>
+        <!-- <span class="message__timestamp">15:30</span> -->
+      </li>
+      <li class="sent-message message">
+        <!-- <span class="message__timestamp">15:38</span> -->
+        <div class="message__content">
+          <span class="message__bubble">oh i`m iron man</span>
+        </div>
       </li>
       <li class="incoming-message message">
-        <span class="message__timestamp">15:38</span>
+          <img src="./images/me.jpg" class="g-avatar message__avatar">
+          <div class="message__content">
+            <span class="message__bubble">i`m thor</span>
+            <span class="message__author">thor</span>
+          </div>
+          <!-- <span class="message__timestamp">15:30</span> -->
+      </li>
+      <li class="sent-message message">
+        <!-- <span class="message__timestamp">15:38</span> -->
         <div class="message__content">
-          <span class="message__bubble">
-            oh i`m iron man
-          </span>
+          <span class="message__bubble">oh i`m iron man</span>
         </div>
       </li>
     </ul>
   </main>
+  <!-- write -->
   <div class="chat__write">
     <div class="chat__write-column">
       <i class="far fa-plus-square"></i>
