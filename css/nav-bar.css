@@ -31,3 +31,18 @@
   border-radius: 50%;
   color:white;
 }
+
+
+@keyframes showNavBar{
+  from{
+    transform: translateY(80px);
+  }
+  to{
+    transform: none;
+  }
+}
+
+.nav{
+  transform: translateY(80px);
+  animation: showNavBar .5s linear .5s forwards;
+}
